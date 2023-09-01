@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style type="text/tailwindcss">
+        .title{
+            @apply text-[3.125rem] leading-[1.1] font-semibold tracking-wide;
+        }
+
+        .subtitle{
+            @apply text-[1.625rem] font-light;
+        }
+
+        .red-btn{
+            @apply bg-[#e50914] py-[6px] px-[26px] flex items-center rounded-sm text-[1.625rem] font-semibold gap-1 justify-center;
+        }
+
+        .gray-border{
+            @apply border-t-[8px] border-[#313338];
+        }
+    </style>
+
+  </head>
+  <body class="bg-black">
+    <!-- Hero Section -->
+    <div
+      class="bg-[url('https://assets.nflxext.com/ffe/siteui/vlv3/855ed6e2-d9f1-4afd-90da-96023ec747c3/330a9a91-59e5-4fa9-ba2c-2e5c25a0ff57/LK-en-20230828-popsignuptwoweeks-perspective_alpha_website_small.jpg')] h-[75vh] w-full bg-cover bg-center relative"
+    >
+      <div
+        class="absolute top-0 right-0 bottom-0 left-0 bg-gradient-to-b from-black/90 via-black/50 to-black/90"
+      ></div>
+
+      <!-- Navbar -->
+      <div class="flex justify-between w-full items-center px-[58px] pt-[28px] z-10 relative">
+        <div>
+          <img src="./netflix.png" alt="netflix-logo" width="120px">
+        </div>
+        <div class="bg-[#e50914] px-[17px] py-[7px] rounded-md text-white font-semibold">
+          <a href="#">Sign In</a>
+        </div>
+      </div>
+
+      <!-- Main Text -->
+      <div class="relative z-10 flex flex-col text-center justify-center items-center text-white w-[85%] max-w-[800px] h-[50vh] mx-auto gap-3 px-5">
+        <h1 class="title max-w-screen-sm">Unlimited movies, TV shows, and more</h1>
+        <p class="subtitle py-[12px]">Watch anywhere. Cancel anytime.</p>
+        <p class="text-[1.2rem] font-light">Ready to watch? Enter your email to create or restart your membership.</p>
+        <div class="flex w-full justify-center gap-2">
+            <input type="text" class="w-[65%] px-[10px] py-4 border rounded-sm bg-black opacity-60 placeholder:text-md text-white font-semibold outline-none" placeholder="Email address">
+            <button class="red-btn">
+                <span>Get Started</span>
+                <svg class="w-5 h-5 text-white fill-current" width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-mirrorinrtl="true" class="default-ltr-cache-0 e1mhci4z1" data-name="ChevronRight" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z" fill="currentColor"></path></svg>
+            </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section-01 -->
+    <div class="gray-border py-20">
+        <div class="flex text-white justify-between max-w-[1100px] mx-auto items-center">
+            <div class="w-[52%]">
+                <h1 class="title pb-3">Enjoy on your TV</h1>
+                <p class="subtitle">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+            </div>
+            <div class="relative w-[48%]">
+                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="tv-image" class="w-full h-full">
+                <video data-uia="nmhp-card-animation-asset-video" autoplay="" playsinline="" muted="" loop="" class="absolute top-[48%] max-h-[54%] max-w-[73%] left-[50%] -translate-x-1/2 -translate-y-1/2"><source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4" ></video>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section-02 -->
+    <div class="gray-border">
+        
+    </div>
+  </body>
+</html>
